@@ -1,71 +1,25 @@
 **Overview**
 
-This project examines the impact of venture capital (VC) funding on startup valuations by comparing European and U.S. venture-backed companies.
+This project analyzes the impact of venture capital (VC) funding on startup valuations, with a comparison between European and U.S. startups.
 
-Using a proprietary dataset of VC-backed firms from 2003 to 2024, the study applies log-log OLS regressions to analyze the relationship between venture funding and post-round valuations. The empirical framework includes controls for company age, number of investors, fund characteristics, as well as industry and year fixed effects.
+Using a proprietary dataset of VC-backed companies from 2003 to 2024, I estimate log-log OLS regressions controlling for company age, number of investors, fund characteristics, as well as industry and year fixed effects. The dataset combines firm-level, deal-level, and investor-level information.
 
-The project combines firm-level, deal-level, and investor-level information to construct a comprehensive panel dataset for econometric analysis.
+The results show a strong and statistically significant positive relationship between VC funding and post-round valuations (β = 0.713, p < 0.001; R² = 0.855). On average, a 10% increase in VC funding is associated with a 7.1% increase in valuation, supporting the idea that VC participation acts as a credible market signal that reduces information asymmetry and enhances firm value.
 
-**Research Question**
+Regional estimations indicate that the effect is initially stronger in the U.S. than in Europe, although the difference becomes statistically insignificant once firm and fund characteristics are included. Robustness checks and instrumental variable (2SLS) estimations confirm the relationship, with IV results suggesting an even stronger elasticity (β = 1.160).
 
-How does venture capital funding influence startup valuations, and does this relationship differ between Europe and the United States?
-
-**Methodology**
-
-The analysis relies on:
-
-Log-log Ordinary Least Squares (OLS) regressions
-Fixed effects models
-Robustness checks
-Instrumental Variable (2SLS) estimations
-Control Variables
-
-The regressions control for:
-
-Company age
-Number of investors
-Fund characteristics
-Industry fixed effects
-Year fixed effects
-
-**Key Findings**
-
-VC funding has a strong and statistically significant positive effect on post-round startup valuations.
-Baseline OLS results show:
-β = 0.713
-p < 0.001
-R² = 0.855
-
-Economically, a 10% increase in venture funding is associated with a 7.1% increase in startup valuation.
-The findings support the hypothesis that venture capital acts as a credible market signal, reducing information asymmetry and increasing firm value.
-
-Regional analysis indicates that the effect is initially stronger in the United States than in Europe. However, once firm and fund characteristics are controlled for, the regional difference becomes statistically insignificant.
-Instrumental Variable (2SLS) estimations confirm the robustness and likely causal nature of the relationship, with IV estimates suggesting an even stronger elasticity β = 1.160
-
-Overall, the results suggest that venture capital serves both as a financial catalyst and a signaling mechanism that influences startup valuation dynamics.
-
-The study also highlights the importance of Investor reputation, Syndication structures,Venture ecosystem characteristics in shaping valuation outcomes across markets.
+Overall, the findings suggest that venture capital acts both as a financial catalyst and as a signaling mechanism influencing startup valuations.
 
 **Dataset**
 
-The analysis is based on proprietary datasets obtained from LSEG and Bloomberg.
-Due to licensing, privacy, and data usage restrictions, the raw datasets cannot be publicly shared.
+The analysis relies on proprietary datasets obtained from LSEG and Bloomberg.
+Due to licensing and privacy restrictions, the raw data cannot be publicly shared.
 
 **Limitations**
 
-Although the dataset obtained from LSEG is highly reliable, it provides a narrower view of private market activity compared to specialized startup databases such as Crunchbase or PitchBook.
+The dataset was primarily obtained from LSEG, which provides a reliable but narrower coverage of private market activity compared to databases such as Crunchbase or PitchBook. As a result, some early-stage rounds, undisclosed valuations, and smaller venture transactions may not be captured.
 
-As a result Early-stage funding rounds, Undisclosed valuations,Smaller venture transactions and Pre-seed and non-public startup activity may not be fully captured in the sample.
-
-In addition, databases such as Crunchbase and PitchBook contain richer information on:
-
-Founder experience
-Educational background
-Industry specialization
-Prior funding history
-Startup maturity
-
-These variables can significantly influence both the probability of receiving VC funding and post-round valuations. Their absence may limit the model’s ability to fully capture startup heterogeneity and the mechanisms through which VC funding affects firm valuation.
+In addition, variables such as founder experience, education, industry specialization, and prior funding history were not available. Their absence may limit the model’s ability to fully capture startup heterogeneity and the mechanisms through which VC funding affects valuations.
 
 **Disclaimer**
 
